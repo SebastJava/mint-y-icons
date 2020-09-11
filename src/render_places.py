@@ -3,7 +3,7 @@ import os
 import subprocess
 import sys
 
-colors = ["Aqua", "Blue", "Brown", "Green", "Grey", "Orange", "Pink", "Purple", "Red", "Sand", "Teal", "Yellow"]
+colors = ["Aqua", "Blue", "BlueDeep", "Grey", "Mint", "MintContrast", "Orange", "Pink", "Purple", "PurpleDeep", "Red", "Yellow"]
 sizes = ["16", "22", "24", "32", "48", "64", "96", "128"]
 
 
@@ -28,7 +28,7 @@ def generate_color(color):
                 print("Rendering %s" % icon_path)
                 os.system("inkscape --export-id=%s \
                                --export-id-only \
-                               --export-png=%s %s >/dev/null \
+                               --export-filename=%s %s >/dev/null \
                      && optipng -o7 --quiet %s" % (name, icon_path, source, icon_path))
 
                 icon_path = os.path.join(icon_dir_2x, icon_name + ".png")
@@ -36,7 +36,7 @@ def generate_color(color):
                 os.system("inkscape --export-id=%s \
                                --export-id-only \
                                --export-dpi=192 \
-                               --export-png=%s %s >/dev/null \
+                               --export-filename=%s %s >/dev/null \
                      && optipng -o7 --quiet %s" % (name, icon_path, source, icon_path))
 
 def parse_arg(arg):
@@ -48,7 +48,7 @@ def parse_arg(arg):
 
 def usage():
     print ("Usage: render_places.py color \n\
-    color can be: Aqua, Blue, Brown, Green, Grey, Orange, Pink, Purple, Red, Sand, Teal, Yellow or All.")
+    color can be: Aqua, Blue, BlueDeep, Grey, Mint, MintContrast, Orange, Pink, Purple, PurpleDeep, Red, Yellow or All.")
     sys.exit(1)
 
 if len(sys.argv) != 2:
