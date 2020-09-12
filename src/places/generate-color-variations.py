@@ -15,7 +15,7 @@ COLORS["BlueDeep"] = "2A47D5"
 COLORS["PurpleDeep"] = "731DC8"
 COLORS["Purple"] = "AB2AD5"
 COLORS["Pink"] = "E8316E"
-# COLORS["lowercase"] = "ffffff"
+COLORS["Yellow"] = "FFCC33"
 
 GREEN_COLOR = "8bb158"
 

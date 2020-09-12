@@ -8,11 +8,8 @@ sizes = ["16", "22", "24", "32", "48", "64", "96", "128"]
 
 
 def generate_color(color):
-    source = "places/" + color.lower() + ".svg"
-    if color == "Green":
-        theme_dir = "../usr/share/icons/Mint-Y"
-    else:
-        theme_dir = "../usr/share/icons/Mint-Y-%s" % color
+    source = "places/" + color + ".svg"
+    theme_dir = "../usr/share/icons/Mint-Yz-%s" % color
     os.system("mkdir -p %s" % theme_dir)
 
     for size in sizes:
