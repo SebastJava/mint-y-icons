@@ -53,3 +53,15 @@ To find broken links use `./deadlinks` or:
 To find files with spaces in their filenames (that breaks the icon cache generation):
 
 	find . | egrep '. '
+
+Build step-by-step
+==================
+
+	cd ~/mint-yz-icons/src/places # go there
+	./generate-color-variations.py # run this
+	cd .. # move up
+	./render_places.py All # run this
+	cd .. # move up
+	./make-directories-and-index.sh # run this
+	sudo cp -rf usr/share/icons/Mint-Yz-* /usr/share/icons/ # test first ?
+	dpkg-buildpackage # build Debian package
