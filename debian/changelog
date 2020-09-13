@@ -1,5 +1,5 @@
-mint-yz-icons (1.0); urgency=low
+mint-yz-icons (1.0) UNRELEASED; urgency=medium
 
-  * Initial version
+  * Initial release. (Closes: #XXXXXX)
 
- -- Sébastien Bouchard <sebastjava@hotmail.ca>  Sun, 13 Sep 2020 15:40:00 -0400
+ -- Sébastien Bouchard <sebastjava@hotmail.ca>  Sun, 13 Sep 2020 17:47:00 -0400
