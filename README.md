@@ -1,3 +1,7 @@
+Forked from Mint-Y icons
+========================
+
+These icons are the same as those found in Mint-Y icons. Only the places colors have been changed to match the colors of https://github.com/SebastJava/mint-yz-theme.
 
 Credits
 =======
