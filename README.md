@@ -61,11 +61,25 @@ To find files with spaces in their filenames (that breaks the icon cache generat
 Build step-by-step
 ==================
 
+If you want to build your own icon theme, you will need to install those packages:
+ 
+  * Inkscape, preferably version 1.0 or higher (from PPA?)
+  * optipng
+  * git
+
+Edit the color hex values in ~/mint-yz-icons/src/places/generate-color-variations.py. Do not change `GREEN_COLOR = "8bb158"`. This one is used by the `sed` find and replace command.
+
+This also means that the ~/mint-yz-icons/src/places/green.svg must not be changed in any way. This one is the template from which all the other colors are build.
+
+Next, open your Terminal and do these lines, one by one:
+
 	cd ~/mint-yz-icons/src/places # go there
 	./generate-color-variations.py # run this
 	cd .. # move up
 	./render_places.py All # run this
 	cd .. # move up
 	./make-directories-and-index.sh # run this
-	sudo cp -rf usr/share/icons/Mint-Yz-* /usr/share/icons/ # test first ?
+	sudo cp -rf usr/share/icons/Mint-Yz-* /usr/share/icons/ # quick test
 	dpkg-buildpackage # build Debian package
+
+Now, go in Menu > Preferences > Themes and try your new icons!
