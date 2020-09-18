@@ -1,7 +1,7 @@
 ![colors-preview](https://github.com/SebastJava/mint-yz-icons/blob/master/colors-preview.png)
 
-Forked from Mint-Y icons
-========================
+Mint-Yz-icons is forked from Mint-Y-icons
+=========================================
 
 These icons are the same as those found in Mint-Y icons. Only the places colors have been changed to match the colors of https://github.com/SebastJava/mint-yz-theme.
 
