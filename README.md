@@ -1,3 +1,5 @@
+![colors-preview](https://github.com/SebastJava/mint-yz-icons/blob/master/colors-preview.png)
+
 Forked from Mint-Y icons
 ========================
 
