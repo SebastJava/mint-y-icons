@@ -19,7 +19,7 @@ for name in "${names[@]}"; do
     cp -f index.theme "usr/share/icons/$name-Dark/"
     cd "usr/share/icons/$name-Dark"
     sed -i "s/Name=/Name=$name-Dark/" index.theme
-    sed -i "s/Inherits=Mint-Yz-old/Inherits=Mint-Yz-old-Dark/" index.theme
+    sed -i "s/Inherits=Mint-Yz-Old,Adwaita,gnome,hicolor/Inherits=Mint-Yz-Old-Dark,Adwaita,gnome,hicolor/" index.theme
     ln -sf "../$name/places"
     cd "$maindir"
 done
