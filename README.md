@@ -1,4 +1,4 @@
-![colors-preview](https://github.com/SebastJava/mint-yz-icons/blob/master/colors-preview.png)
+![colors-preview](https://github.com/SebastJava/mint-yz-icons/blob/sebastcolors/colors-preview.png)
 
 Mint-Yz-icons is forked from Mint-Y-icons
 =========================================
