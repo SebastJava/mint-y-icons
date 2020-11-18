@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: mint-y-icons
-Upstream-Contact: Clement Lefebvre <root@linuxmint.com>
-Source: https://github.com/linuxmint/mint-y-icons
+Upstream-Name: mint-yz-icons
+Upstream-Contact: Sébastien Bouchard <sebastjava@hotmail.ca>
+Source: https://github.com/SebastJava/mint-yz-icons
 
 Files: *
 Copyright: 2010-2014 Clement Lefebvre <root@linuxmint.com>
