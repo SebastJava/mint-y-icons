@@ -3,13 +3,13 @@ import os
 import subprocess
 import sys
 
-colors = ["Aqua", "Blue", "BlueDeep", "Green", "Grey", "Mint", "MintContrast", "Orange", "Pink", "Purple", "PurpleDeep", "Red", "Yellow"]
+colors = ["Aqua", "Blue", "BlueDeep", "green", "Grey", "Mint", "MintContrast", "Orange", "Pink", "Purple", "PurpleDeep", "Red", "Yellow"]
 sizes = ["16", "22", "24", "32", "48", "64", "96", "128"]
 
 
 def generate_color(color):
     source = "places/" + color + ".svg"
-    if color == "Green":
+    if color == "green":
         theme_dir = "../usr/share/icons/Mint-Yz-Old"
     else:
         theme_dir = "../usr/share/icons/Mint-Yz-%s" % color
