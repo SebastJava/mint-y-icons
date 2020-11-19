@@ -90,5 +90,8 @@ Next, open your Terminal and do these lines, one by one:
 	./make-directories-and-index.sh # run this
 	sudo cp -rf usr/share/icons/Mint-Yz-* /usr/share/icons/ # quick test
 	dpkg-buildpackage # build Debian package
+	#
+	# NOTE: If you added or removed color names, you need to update
+	# ~/mint-yz-icons/debian/postinst before running dpkg-buildpackage.
 
 Now, go in Menu > Preferences > Themes and try your new icons!
