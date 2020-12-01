@@ -7,7 +7,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0.1 (1.0.1+r73)"
+   inkscape:version="1.0.1 (1.0.1+r74)"
    id="svg8"
    version="1.1"
    viewBox="0 0 216.95833 84.666667"
@@ -42,7 +42,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -103,7 +103,7 @@
                ry="2" />
             <rect
                rx="1"
-               style="fill:#0ac266;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               style="fill:#0ab860;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                id="rect3957-12"
                width="122"
                height="78"
@@ -167,7 +167,7 @@
                ry="2" />
             <rect
                rx="1"
-               style="fill:#ff192d;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               style="fill:#ff1428;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                id="rect3957-12-3"
                width="122"
                height="78"
@@ -231,7 +231,7 @@
                ry="2" />
             <rect
                rx="1"
-               style="fill:#ff741a;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               style="fill:#ff7200;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                id="rect3957-12-7"
                width="122"
                height="78"
@@ -423,7 +423,7 @@
                ry="2" />
             <rect
                rx="1"
-               style="fill:#3653e2;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               style="fill:#3753e2;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                id="rect3957-12-1"
                width="122"
                height="78"
@@ -487,7 +487,7 @@
                ry="2" />
             <rect
                rx="1"
-               style="fill:#731dc8;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               style="fill:#8033cc;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                id="rect3957-12-62"
                width="122"
                height="78"
@@ -551,7 +551,7 @@
                ry="2" />
             <rect
                rx="1"
-               style="fill:#a528cd;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               style="fill:#aa40bf;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                id="rect3957-12-8"
                width="122"
                height="78"
@@ -615,7 +615,7 @@
                ry="2" />
             <rect
                rx="1"
-               style="fill:#ff3376;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+               style="fill:#ff4da6;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
                id="rect3957-12-89"
                width="122"
                height="78"
