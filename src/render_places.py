@@ -3,7 +3,7 @@ import os
 import subprocess
 import sys
 
-colors = ["Aqua", "Blue", "BlueDeep", "green", "Grey", "Mint", "MintContrast", "Orange", "Pink", "Purple", "PurpleDeep", "Red", "Yellow"]
+colors = ["Aqua", "Blue", "BlueDeep", "green", "Grey", "MintSoda", "MintSoft", "Orange", "Pink", "Purple", "PurpleDeep", "Red", "Yellow"]
 sizes = ["16", "22", "24", "32", "48", "64", "96", "128"]
 
 
@@ -47,8 +47,10 @@ def parse_arg(arg):
         generate_color(arg)
 
 def usage():
-    print ("Usage: render_places.py color \n\
-    color can be: Aqua, Blue, BlueDeep, Grey, Mint, MintContrast, Orange, Pink, Purple, PurpleDeep, Red, Yellow or All.")
+    print ("Usage: render_places.py COLOR")
+    print ("COLOR can be 'All' or one of these:")
+    for color in colors:
+        print ("    %s" % color)
     sys.exit(1)
 
 if len(sys.argv) != 2:

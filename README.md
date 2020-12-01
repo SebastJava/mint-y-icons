@@ -70,28 +70,50 @@ To find files with spaces in their filenames (that breaks the icon cache generat
 Build step-by-step
 ==================
 
-If you want to build your own icon theme, you will need to install those packages:
+First, open your Terminal and type:
+
+	git clone https://github.com/SebastJava/mint-yz-icons.git
+
+To build your own icon theme, you will need to install those packages:
  
   * Inkscape, preferably version 1.0 or higher (from PPA?)
   * optipng
   * git
 
-Edit the color hex values in ~/mint-yz-icons/src/places/generate-color-variations.py. Do not change `GREEN_COLOR = "8bb158"`. This one is used by the `sed` find and replace command.
+Edit the color hex values in **src/places/generate-color-variations.py.** You can also add or delete color names there. Do not change `GREEN_COLOR = "8bb158"`. This one is used by the `sed` find and replace command.
 
 This also means that the ~/mint-yz-icons/src/places/green.svg must not be changed in any way. This one is the template from which all the other colors are build.
 
+If you added or removed color names, you also need to edit the colors array in **src/render_places.py** and the names array in **make-directories-and-index.sh**
+
 Next, open your Terminal and do these lines, one by one:
 
+	shopt -s extglob # enable the extglob shell option
+	cd ~/mint-yz-icons/usr/share/icons # go there
+	rm -rf !(Mint-Yz-Old|Mint-Yz-Old-Dark) # delete old icons except Mint-Yz-Old + Mint-Yz-Old-Dark
 	cd ~/mint-yz-icons/src/places # go there
+	rm -- !(green.svg|extra.svg|*.py) # remove all except extra, generate-color-variations, and green
+	shopt -u extglob # turn off the extglob shell option
 	./generate-color-variations.py # run this
 	cd .. # move up
 	./render_places.py All # run this
 	cd .. # move up
 	./make-directories-and-index.sh # run this
+	sudo rm -rf /usr/share/icons/Mint-Yz-* # quick test
 	sudo cp -rf usr/share/icons/Mint-Yz-* /usr/share/icons/ # quick test
+
+Next, edit these files:
+
+  * debian/changelog
+  * debian/control
+  * debian/copyright
+
+If you added or removed color names, you also need to update this file:
+
+  * debian/postinst
+
+And now you can build the Debian package:
+
 	dpkg-buildpackage # build Debian package
-	#
-	# NOTE: If you added or removed color names, you need to update
-	# ~/mint-yz-icons/debian/postinst before running dpkg-buildpackage.
 
 Now, go in Menu > Preferences > Themes and try your new icons!

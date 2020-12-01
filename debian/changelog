@@ -1,3 +1,10 @@
+mint-yz-icons (1.6) UNRELEASED; urgency=medium
+
+  * Subtle updates on most colors.
+  * Subtle darkening on most of the dark themes.
+
+ -- Sébastien Bouchard <sebastjava@hotmail.ca>  Mon, 30 Nov 2020 22:33:00 -0500
+
 mint-yz-icons (1.5) UNRELEASED; urgency=medium
 
   * Reset from upstream/master (git reset --hard upstream/master).

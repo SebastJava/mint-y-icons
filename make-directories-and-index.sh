@@ -1,6 +1,6 @@
 #!/bin/bash
 
-names=("Mint-Yz-Aqua" "Mint-Yz-Blue" "Mint-Yz-BlueDeep" "Mint-Yz-Grey" "Mint-Yz-Mint" "Mint-Yz-MintContrast" "Mint-Yz-Orange" "Mint-Yz-Pink" "Mint-Yz-Purple" "Mint-Yz-PurpleDeep" "Mint-Yz-Red" "Mint-Yz-Yellow")
+names=("Mint-Yz-Aqua" "Mint-Yz-Blue" "Mint-Yz-BlueDeep" "Mint-Yz-Grey" "Mint-Yz-MintSoda" "Mint-Yz-MintSoft" "Mint-Yz-Orange" "Mint-Yz-Pink" "Mint-Yz-Purple" "Mint-Yz-PurpleDeep" "Mint-Yz-Red" "Mint-Yz-Yellow")
 maindir=$PWD
 
 # Make directories and index.theme for all colors-light (except Mint-Yz-Old)
