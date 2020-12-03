@@ -2,7 +2,7 @@ Package: mint-yz-icons
 Version: 1.6
 Architecture: all
 Maintainer: Sébastien Bouchard <sebastjava@hotmail.ca>
-Installed-Size: 101977
+Installed-Size: 101976
 Section: gnome
 Priority: optional
 Description: Mint-Yz icon theme
