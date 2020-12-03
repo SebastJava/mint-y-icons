@@ -5,7 +5,7 @@ import os
 # It uses the following color table to do so:
 COLORS = {}
 COLORS["MintSoda"] = "40BF40"
-COLORS["MintSoft"] = "0AB860"
+COLORS["MintSoft"] = "14B866"
 COLORS["Grey"] = "767676"
 COLORS["Red"] = "FF1428"
 COLORS["Orange"] = "FF7200"
