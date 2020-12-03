@@ -110,7 +110,7 @@ Next, edit these files:
 
 If you added or removed color names, you also need to update this file:
 
-  * debian/postinst
+  * debian/postinst (Make sure your text editor replaces each tab with 4 spaces!)
 
 And now you can build the Debian package:
 
