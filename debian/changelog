@@ -1,7 +1,12 @@
+mint-yz-icons (2.5) UNRELEASED; urgency=medium
+
+  * Subtle updates on some colors.
+
+ -- Sébastien Bouchard <sebastjava@hotmail.ca>  Fri, 25 Dec 2020 00:27:00 -0500 
+
 mint-yz-icons (1.6) UNRELEASED; urgency=medium
 
   * Subtle updates on most colors.
-  * Subtle darkening on most of the dark themes.
 
  -- Sébastien Bouchard <sebastjava@hotmail.ca>  Mon, 30 Nov 2020 22:33:00 -0500
 
