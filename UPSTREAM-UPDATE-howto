@@ -1,0 +1,57 @@
+
+From time to time, it becomes necessary to make a big update. I should pull all these many changes from the upstream source. But it is not possible to get an automatic merge. And comparing would be very complicated:
+
+* There are many thousands of automatically generated files in usr/ and elsewhere. So GitHub cannot list all files.
+* There are also many debian/ files and sub-directories being automatically created by ``dpkg-buildpackage``.
+* There are a few little files specifically created for Mint-Yz.
+* There are a few little files that were modified for Mint-Yz.
+
+So what’s so different in Mint-Yz-icons anyway? It is basically the official Mint-Y, but re-generated with new colors. When i look at the little files that were specifically handcrafted for Mint-Yz, there aren’t so many. So i figured it would be easier and less prone to errors to just replay the whole thing when big updates from the upstream source are needed:
+
+	cd ~/mint-yz-icons
+	git checkout sebastcolors
+	Duplicate ~/mint-yz-icons (optional)
+	Grsync info+run (optional: i use this as a double check to monitor all changes)
+	Put the UPSTREAM-UPDATE directory aside, on the desktop: next step, everything else will be erased!
+	Grsync run (optional)
+
+TERMINAL:
+
+	git checkout master
+	git remote get-url upstream # = https://github.com/linuxmint/mint-y-icons.git
+	git remote get-url origin # = https://github.com/SebastJava/mint-yz-icons.git
+	git remote add upstream https://github.com/linuxmint/mint-y-icons.git # if not already done
+	git remote set-url origin https://github.com/SebastJava/mint-yz-icons.git # if necessary
+	git branch -a
+
+	git fetch --all
+	git reset --hard upstream/master  
+	git push origin master --force
+	git status
+
+	git checkout sebastcolors
+	git reset --hard upstream/master
+	git push origin sebastcolors --force
+	git status
+__________________________________________________________________________________________________________________
+
+	Grsync (optional)
+
+	git checkout sebastcolors; git checkout -b z-new; Z-NEW.md
+	Move the UPSTREAM-UPDATE directory copy into ~/mint-yz-icons
+	Duplicate the UPSTREAM-UPDATE directory (That’s for your next big upstream-update...)
+	Add or replace files with UPSTREAM-UPDATE files
+	git status, add, commit
+	git push --set-upstream origin z-new
+	Grsync (optional)
+	GitHub compare and edit as needed: sebastcolors <- z-new
+	GitHub Pull request: sebastcolors <- z-new
+	GitHub merge pull request
+	check
+	git checkout sebastcolors
+	git pull
+	move this UPSTREAM-UPDATE-howto into ~/mint-yz-icons
+	git push
+
+Okay... Now you have a fresh, up-to-date base. Next, you will have to do all the My-complete-step-by-step.txt !!
+
