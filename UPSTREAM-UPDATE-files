@@ -1,0 +1,22 @@
+
+	mv usr/share/icons/Mint-Y usr/share/icons/Mint-Yz-Old
+	mv usr/share/icons/Mint-Y-Dark usr/share/icons/Mint-Yz-Old-Dark
+	~/mint-yz-icons/usr/share/icons/Mint-Yz-Old/index.theme
+	~/mint-yz-icons/usr/share/icons/Mint-Yz-Old-Dark/index.theme
+	
+	~/mint-yz-icons/debian/changelog
+	~/mint-yz-icons/debian/control
+	~/mint-yz-icons/debian/copyright
+	~/mint-yz-icons/debian/postinst
+
+	~/mint-yz-icons/previews/
+	
+	~/mint-yz-icons/src/places/generate-color-variations.py
+	~/mint-yz-icons/src/render_places.py
+	
+	~/mint-yz-icons/colors-preview.png
+	~/mint-yz-icons/colors-preview.svg
+	~/mint-yz-icons/index.theme
+	~/mint-yz-icons/make-directories-and-index.sh
+	~/mint-yz-icons/README.md
+
