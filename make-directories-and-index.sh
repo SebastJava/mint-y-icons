@@ -6,6 +6,7 @@ maindir=$PWD
 # Make directories and index.theme for all colors-light (except Mint-Yz-Old)
 for name in "${names[@]}"; do
     mkdir -p "usr/share/icons/$name"
+    cp -rf usr/share/icons/Mint-Yz-Old/places "usr/share/icons/$name/"
     cp -f index.theme "usr/share/icons/$name/"
     cd "usr/share/icons/$name"
     sed -i "s/Name=/Name=$name/" index.theme

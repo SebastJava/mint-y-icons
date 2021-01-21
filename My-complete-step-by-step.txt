@@ -10,26 +10,60 @@ To build your own icon theme, you will need to install those packages:
     optipng
     git
 
+2021-01-20-06-22
+●●●	I messed up and did commit, but not push.
+XXX	git reset --hard origin/sebastcolors
+xxx	git status 2021-01-20-06-42
+On branch sebastcolors
+Your branch is up to date with 'origin/sebastcolors'.
+
+nothing to commit, working tree clean
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2021-01-20-07-00 (XX)
+2021-01-20-14-57 
+DOUBLE-CHECKED: UPSTREAM-UPDATE-howto all done, and nothing else (git reset --hard origin/sebastcolors)
+xx	Grsync
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2021-01-20-19-21 (XX)
+XX	git status
+2021-01-20-20-57 
+Having some doubts...
+xx	git status: check for changed files, copy them on the desktop
+xx	git reset --hard origin/sebastcolors
+HEAD is now at 32b4b01fa 	new file:   UPSTREAM-UPDATE-howto
+xx	git status
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2021-01-20-21-08 
+	replace changed files
 
 THIS IS MY COMPLETE GENERAL CHECK LIST FOR UPDATES...
 
-	src/places/generate-color-variations.py (edit color names and values)
-	src/render_places.py (If you added or removed color names, you also need to edit the colors array)
-	make-directories-and-index.sh (and the names array)
+--	src/places/generate-color-variations.py (edit color names and values)
+--	src/render_places.py (If you added or removed color names, you also need to edit the colors array)
+--	make-directories-and-index.sh (and the names array)
 TERMINAL:
-	shopt -s extglob # enable the extglob shell option
 	cd ~/mint-yz-icons/usr/share/icons # go there
+	mv Mint-Y Mint-Yz-Old
+	mv Mint-Y-Dark Mint-Yz-Old-Dark
+	shopt -s extglob # enable the extglob shell option
 	rm -rf !(Mint-Yz-Old|Mint-Yz-Old-Dark) # delete old icons except Mint-Yz-Old + Mint-Yz-Old-Dark
 	cd ~/mint-yz-icons/src/places # go there
 	rm -- !(green.svg|extra.svg|*.py) # remove all except extra, generate-color-variations, and green
 	shopt -u extglob # turn off the extglob shell option
 	./generate-color-variations.py # run this
-	cd .. # move up
-	./render_places.py All # run this
-	cd .. # move up
+	cd ~/mint-yz-icons # go there
 	./make-directories-and-index.sh # run this
+	cd src
+	./render_places.py All # run this
+
+
+	cd ..
 	sudo rm -rf /usr/share/icons/Mint-Yz-* # quick test
 	sudo cp -rf usr/share/icons/Mint-Yz-* /usr/share/icons/ # quick test
+
+
+	git status, add, commit
 
 
 	CHECK (visual, directories)
