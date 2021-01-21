@@ -35,36 +35,36 @@ HEAD is now at 32b4b01fa 	new file:   UPSTREAM-UPDATE-howto
 xx	git status
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 2021-01-20-21-08 
-	replace changed files
-
+xx	replace changed files
+xx	Grsync
+2021-01-20-21-18 
 THIS IS MY COMPLETE GENERAL CHECK LIST FOR UPDATES...
 
 --	src/places/generate-color-variations.py (edit color names and values)
 --	src/render_places.py (If you added or removed color names, you also need to edit the colors array)
 --	make-directories-and-index.sh (and the names array)
 TERMINAL:
-	cd ~/mint-yz-icons/usr/share/icons # go there
-	mv Mint-Y Mint-Yz-Old
-	mv Mint-Y-Dark Mint-Yz-Old-Dark
-	shopt -s extglob # enable the extglob shell option
-	rm -rf !(Mint-Yz-Old|Mint-Yz-Old-Dark) # delete old icons except Mint-Yz-Old + Mint-Yz-Old-Dark
-	cd ~/mint-yz-icons/src/places # go there
-	rm -- !(green.svg|extra.svg|*.py) # remove all except extra, generate-color-variations, and green
-	shopt -u extglob # turn off the extglob shell option
-	./generate-color-variations.py # run this
-	cd ~/mint-yz-icons # go there
-	./make-directories-and-index.sh # run this
-	cd src
-	./render_places.py All # run this
-
-
-	cd ..
-	sudo rm -rf /usr/share/icons/Mint-Yz-* # quick test
-	sudo cp -rf usr/share/icons/Mint-Yz-* /usr/share/icons/ # quick test
-
-
-	git status, add, commit
-
+xx	cd ~/mint-yz-icons/usr/share/icons # go there
+xx	mv Mint-Y Mint-Yz-Old
+xx	mv Mint-Y-Dark Mint-Yz-Old-Dark
+xx	shopt -s extglob # enable the extglob shell option
+xx	rm -rf !(Mint-Yz-Old|Mint-Yz-Old-Dark) # delete old icons except Mint-Yz-Old + Mint-Yz-Old-Dark
+xx	cd ~/mint-yz-icons/src/places # go there
+xx	rm -- !(green.svg|extra.svg|*.py) # remove all except extra, generate-color-variations, and green
+xx	shopt -u extglob # turn off the extglob shell option
+xx	./generate-color-variations.py # run this
+xx	cd ~/mint-yz-icons # go there
+xx	./make-directories-and-index.sh # run this
+xx	cd src
+xx	./render_places.py All # run this
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2021-01-20-23-11 
+xx	cd ..
+xx	sudo rm -rf /usr/share/icons/Mint-Yz-* # quick test
+xx	sudo cp -rf usr/share/icons/Mint-Yz-* /usr/share/icons/ # quick test
+xx	git status, add, commit, push
+xx	Grsync
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
 	CHECK (visual, directories)
 NEXT, EDIT THESE FILES:
