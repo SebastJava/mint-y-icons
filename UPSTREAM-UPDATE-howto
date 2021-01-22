@@ -11,9 +11,9 @@ So what’s so different in Mint-Yz-icons anyway? It is basically the official M
 	cd ~/mint-yz-icons
 	git checkout sebastcolors
 	Duplicate ~/mint-yz-icons (optional)
+	Move the files listed in UPSTREAM-UPDATE-files into a new UPSTREAM-UPDATE directory
+	Move this UPSTREAM-UPDATE directory aside, on the desktop: next step, everything else will be erased!
 	Grsync info+run (optional: i use this as a double check to monitor all changes)
-	Put the UPSTREAM-UPDATE directory aside, on the desktop: next step, everything else will be erased!
-	Grsync run (optional)
 
 TERMINAL:
 
@@ -37,10 +37,8 @@ ________________________________________________________________________________
 
 	Grsync (optional)
 
-	git checkout sebastcolors; git checkout -b z-new; Z-NEW.md
-	Move the UPSTREAM-UPDATE directory copy into ~/mint-yz-icons
-	Duplicate the UPSTREAM-UPDATE directory (That’s for your next big upstream-update...)
-	Add or replace files with UPSTREAM-UPDATE files
+	git checkout sebastcolors; git checkout -b z-new
+	Add or replace files as listed in UPSTREAM-UPDATE-files and moved from the UPSTREAM-UPDATE directory
 	git status, add, commit
 	git push --set-upstream origin z-new
 	Grsync (optional)
@@ -50,8 +48,8 @@ ________________________________________________________________________________
 	check
 	git checkout sebastcolors
 	git pull
-	move this UPSTREAM-UPDATE-howto into ~/mint-yz-icons
-	git push
+	check UPSTREAM-UPDATE-files and UPSTREAM-UPDATE-howto into ~/mint-yz-icons
+	git status
 
 Okay... Now you have a fresh, up-to-date base. Next, you will have to do all the My-complete-step-by-step.txt !!
 
