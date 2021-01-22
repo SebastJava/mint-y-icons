@@ -65,8 +65,8 @@ xx	sudo cp -rf usr/share/icons/Mint-Yz-* /usr/share/icons/ # quick test
 xx	git status, add, commit, push
 xx	Grsync
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-	CHECK (visual, directories)
+2021-01-21-19-10 
+XX	CHECK (visual, directories)
 NEXT, EDIT THESE FILES:
 	debian/changelog
 	debian/control
