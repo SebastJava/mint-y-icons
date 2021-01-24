@@ -55,6 +55,7 @@ xx	shopt -u extglob # turn off the extglob shell option
 xx	./generate-color-variations.py # run this
 xx	cd ~/mint-yz-icons # go there
 xx	./make-directories-and-index.sh # run this
+xx	./link_rename.sh ~/mint-yz-icons/usr/share/icons/Mint-Yz-Old-Dark/actions Mint-Y Mint-Yz-Old
 xx	cd src
 xx	./render_places.py All # run this
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -67,6 +68,22 @@ xx	Grsync
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 2021-01-21-19-10 
 XX	CHECK (visual, directories)
+xx	Grsync
+
+BUG FIXING: DELETE THIS SECTION FROM FUTURE OPERATIONS___________________________________________________________
+SYMLINKS IN USR/SHARE/ICONS/MINT-YZ-OLD-DARK/ACTIONS NEEDS TO BE UPDATED.
+XX	New file: /home/sebastien/mint-yz-icons/link_rename.sh
+XX	~/mint-yz-icons$ ./link_rename.sh
+		~/mint-yz-icons/usr/share/icons/Mint-Yz-Old-Dark/actions Mint-Y Mint-Yz-Old
+xx	edit TERMINAL steps here above
+xx	check: links are ok, same as original Mint-Y
+	git status, add, commit, push
+	Grsync
+_________________________________________________________________________________________________________________
+
+
+
+
 NEXT, EDIT THESE FILES:
 	debian/changelog
 	debian/control
