@@ -97,10 +97,10 @@ xx	TEST install
 26/26	Icon theme cache?
 xx	check visual
 xxxx	check directories (Mint-Yz-Old,Mint-Yz-Old-Dark,Mint-Yz-Orange,Mint-Yz-Orange-Dark)
-	git commit
-	Grsync
-
-
+xx	git commit
+xx	Grsync
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Sun, 24 Jan 2021 00:14:50 -0500 
 	previews
 	git push
 	Grsync
