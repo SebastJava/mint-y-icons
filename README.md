@@ -5,8 +5,6 @@ Mint-Yz-icons is forked from Mint-Y-icons
 
 These icons are the same as those found in Mint-Y icons. Only the places colors have been changed to match the colors of https://github.com/SebastJava/mint-yz-theme.
 
-WARNING: THIS PACKAGE NEEDS TO BE UPDATED. IT IS ALL OKAY FOR LINUX MINT 20. BUT THERE ARE CHANGES TO BE MADE FOR MINT 20.1. PLEASE COME BACK LATER FOR MINT 20.1. You can still try it right now. I am using it right now on Mint 20.1. But it is not certified 100 % standard at this time... This is version 2.5. Please come back here (or on GitHub) and download and install when a new version is available.
-
 Installation
 ============
 
