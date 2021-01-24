@@ -1,0 +1,11 @@
+Package: mint-yz-icons
+Version: 2.5.1
+Architecture: all
+Maintainer: Sébastien Bouchard <sebastjava@hotmail.ca>
+Installed-Size: 108677
+Section: gnome
+Priority: optional
+Description: Mint-Yz icon theme
+ Forked from linuxmint/mint-y-icons.
+ A flat, colorful, and modern theme based on
+ Paper and Moka.

@@ -91,18 +91,18 @@ XX	debian/changelog
 xx	git commit
 xx	Grsync
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
-	dpkg-buildpackage # build Debian package
-	TEST install
-	Icon theme cache?
-	check visual
-	check directories
+Sat, 23 Jan 2021 23:13:23 -0500 
+xx	dpkg-buildpackage # build Debian package
+xx	TEST install
+26/26	Icon theme cache?
+xx	check visual
+xxxx	check directories (Mint-Yz-Old,Mint-Yz-Old-Dark,Mint-Yz-Orange,Mint-Yz-Orange-Dark)
 	git commit
 	Grsync
 
 
 	previews
-	git commit
+	git push
 	Grsync
 
 
