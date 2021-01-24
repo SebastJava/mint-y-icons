@@ -101,32 +101,30 @@ xx	git commit
 xx	Grsync
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 Sun, 24 Jan 2021 00:14:50 -0500 
-	previews
-	git push
-	Grsync
-
-
+--	previews
+xx	git push
+xx	Grsync
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Sun, 24 Jan 2021 00:21:43 -0500 
 PUBLISH (This section is mine; ignore it or edit it to your needs.)
-	/home/sebastien/mint-yz-icons/previews
-	Grsync
-	git status
-	git commit
-
-
-	git status
-	git push
-	GitHub check
-	GitHub preview
-	GitHub misc
-	git pull
-	GitHub release
-	check
-
-
-	Pling files update
-	Pling changelog
-	Pling presentation
-	re-check all
-	git status
-	Grsync
+xx	git status
+xx	GitHub check
+xx	GitHub preview
+xx	GitHub misc
+--	git pull
+xx	GitHub release
+xx	check
+xx	README.md
+xx	git pull
+xx	Grsync
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+Sun, 24 Jan 2021 00:55:20 -0500 
+xx	Mint Forums
+xx	Pling files update
+xx	Pling changelog
+xx	Pling presentation
+xx	git status
+xx	Grsync
+xx	re-check all Pling
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 

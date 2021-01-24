@@ -1,3 +1,4 @@
+NOTE: NEXT TIME, I COULD TRY TO REPLACE USR/SHARE/ICONS/ AND DEBIAN/ AND THEN CHECK HOW COMPARE WORKS IN GITHUB...
 
 From time to time, it becomes necessary to make a big update. I should pull all these many changes from the upstream source. But it is not possible to get an automatic merge. And comparing would be very complicated:
 
