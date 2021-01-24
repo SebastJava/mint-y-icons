@@ -57,7 +57,7 @@ xx	cd ~/mint-yz-icons # go there
 xx	./make-directories-and-index.sh # run this
 xx	./link_rename.sh ~/mint-yz-icons/usr/share/icons/Mint-Yz-Old-Dark/actions Mint-Y Mint-Yz-Old
 xx	cd src
-xx	./render_places.py All # run this
+xx	./render_places.py All # run this AFTER make-directories-and-index.sh !
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 2021-01-20-23-11 
 xx	cd ..
@@ -70,6 +70,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 XX	CHECK (visual, directories)
 xx	Grsync
 
+2021-01-23-19-20 
 BUG FIXING: DELETE THIS SECTION FROM FUTURE OPERATIONS___________________________________________________________
 SYMLINKS IN USR/SHARE/ICONS/MINT-YZ-OLD-DARK/ACTIONS NEEDS TO BE UPDATED.
 XX	New file: /home/sebastien/mint-yz-icons/link_rename.sh
@@ -77,19 +78,20 @@ XX	~/mint-yz-icons$ ./link_rename.sh
 		~/mint-yz-icons/usr/share/icons/Mint-Yz-Old-Dark/actions Mint-Y Mint-Yz-Old
 xx	edit TERMINAL steps here above
 xx	check: links are ok, same as original Mint-Y
-	git status, add, commit, push
-	Grsync
+xxxx	git status, add, commit, push
+xx	Grsync
 _________________________________________________________________________________________________________________
-
-
-
-
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+2021-01-23-19-40 
 NEXT, EDIT THESE FILES:
-	debian/changelog
-	debian/control
-	debian/copyright
-	debian/postinst (If you added or removed color names, you also need to update this file)
+XX	debian/changelog
+--	debian/control
+--	debian/copyright
+--	debian/postinst (If you added or removed color names, you also need to update this file)
 	git commit
+	Grsync
+
+
 	dpkg-buildpackage # build Debian package
 	TEST install
 	Icon theme cache?

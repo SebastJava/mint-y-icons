@@ -1,3 +1,13 @@
+mint-yz-icons (2.5.1) UNRELEASED; urgency=medium
+
+  * UPSTREAM-UPDATE = git reset --hard upstream/master
+  * UPSTREAM-UPDATE = pull z-new (Re-introduce the Mint-Yz difference.)
+  * UPSTREAM-UPDATE method described for future jobs.
+  * Modified make-directories-and-index.sh for symlinks in /places/
+  * Updated symlinks = ../../Mint-Yz-Old/actions/* in Mint-Yz-Old-Dark/actions/*
+
+ -- Sébastien Bouchard <sebastjava@hotmail.ca>  Sat, 23 Jan 2021 19:43:55 -0500 
+
 mint-yz-icons (2.5) UNRELEASED; urgency=medium
 
   * Subtle updates on some colors.
