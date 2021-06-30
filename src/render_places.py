@@ -3,16 +3,16 @@ import os
 import subprocess
 import sys
 
-colors = ["Aqua", "Blue", "Brown", "Green", "Grey", "Orange", "Pink", "Purple", "Red", "Sand", "Teal", "Yellow"]
+colors = ["AquaShine", "BlueBelize", "BlueElectron", "green", "Grey", "MintLeaf", "MintSoda", "OrangeShine", "Pink", "Purple", "RedShine", "Yellow"]
 sizes = ["16", "22", "24", "32", "48", "64", "96", "128"]
 
 
 def generate_color(color):
-    source = "places/" + color.lower() + ".svg"
-    if color == "Green":
-        theme_dir = "../usr/share/icons/Mint-Y"
+    source = "places/" + color + ".svg"
+    if color == "green":
+        theme_dir = "../usr/share/icons/Mint-Yz-Classic"
     else:
-        theme_dir = "../usr/share/icons/Mint-Y-%s" % color
+        theme_dir = "../usr/share/icons/Mint-Yz-%s" % color
     os.system("mkdir -p %s" % theme_dir)
 
     for size in sizes:
@@ -28,7 +28,7 @@ def generate_color(color):
                 print("Rendering %s" % icon_path)
                 os.system("inkscape --export-id=%s \
                                --export-id-only \
-                               --export-png=%s %s >/dev/null \
+                               --export-filename=%s %s >/dev/null \
                      && optipng -o7 --quiet %s" % (name, icon_path, source, icon_path))
 
                 icon_path = os.path.join(icon_dir_2x, icon_name + ".png")
@@ -36,7 +36,7 @@ def generate_color(color):
                 os.system("inkscape --export-id=%s \
                                --export-id-only \
                                --export-dpi=192 \
-                               --export-png=%s %s >/dev/null \
+                               --export-filename=%s %s >/dev/null \
                      && optipng -o7 --quiet %s" % (name, icon_path, source, icon_path))
 
 def parse_arg(arg):
@@ -47,8 +47,10 @@ def parse_arg(arg):
         generate_color(arg)
 
 def usage():
-    print ("Usage: render_places.py color \n\
-    color can be: Aqua, Blue, Brown, Green, Grey, Orange, Pink, Purple, Red, Sand, Teal, Yellow or All.")
+    print ("Usage: render_places.py COLOR")
+    print ("COLOR can be 'All' or one of these:")
+    for color in colors:
+        print ("    %s" % color)
     sys.exit(1)
 
 if len(sys.argv) != 2:
