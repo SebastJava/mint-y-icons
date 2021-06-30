@@ -1,3 +1,10 @@
+mint-yz-icons (2.6) UNRELEASED; urgency=medium
+
+  * A new approach to the color palette.
+  * UPSTREAM-RESET = GitHub fetch upstream, new git clone, replay all changes
+
+ -- Sébastien Bouchard <sebastjava@hotmail.ca>  Wed, 30 Jun 2021 12:45:15 -0400
+
 mint-yz-icons (2.5.1) UNRELEASED; urgency=medium
 
   * UPSTREAM-UPDATE = git reset --hard upstream/master
