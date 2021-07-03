@@ -2,7 +2,7 @@ mint-yz-icons (2.6.1) UNRELEASED; urgency=medium
 
   * New debian/postrm file to ensure complete removals and avoid warnings on upgrades.
 
- -- Sébastien Bouchard <sebastjava@hotmail.ca>  Sat, 03 Jul 2021 14:09:40 -0400
+ -- Sébastien Bouchard <sebastjava@hotmail.ca>  Sat, 03 Jul 2021 17:01:55 -0400
 
 mint-yz-icons (2.6) UNRELEASED; urgency=medium
 
