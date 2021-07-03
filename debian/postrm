@@ -1,1 +1,6 @@
 rm -rf /usr/share/icons/Mint-Yz-*
+
+# The auto-generated postrm did not update-icon-caches on most "-Dark" variants.
+# This caused some directories to be not empty and thus not deleted.
+# And this caused some warning messages when doing GDebi updates.
+# So, just erase it all, including some possible previous ones.
